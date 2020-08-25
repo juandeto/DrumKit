@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumKit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound" style="font-size: 1.1rem">HiHat 1</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Bass</span>
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Snare</span>
+        </div>
+        <div data-key="89" class="key">
+            <kbd>Y</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound" style="font-size: 1.1rem">HiHat 2</span>
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">Ride</span>
+        </div>
+        <div data-key="78" class="key">
+            <kbd>N</kbd>
+            <span class="sound">Crash</span>
+        </div>
+        <div data-key="87" class="key">
+            <kbd>W</kbd>
+            <span class="sound">Cimbal</span>
+        </div>
+        <div data-key="82" class="key">
+            <kbd>R</kbd>
+            <span class="sound">Conga</span>
+        </div>
+
+        <audio data-key="71" src="sounds/redo.WAV"></audio>
+        <audio data-key="89" src="sounds/clap.WAV"></audio>
+        <audio data-key="68" src="sounds/bombo.WAV"></audio>
+        <audio data-key="75" src="sounds/render.WAV"></audio>
+        <audio data-key="65" src="sounds/openHihat.WAV"></audio>
+        <audio data-key="74" src="sounds/closeHihat.WAV"></audio>
+        <audio data-key="87" src="sounds/china.WAV"></audio>
+        <audio data-key="78" src="sounds/platoAbierto.WAV"></audio>
+        <audio data-key="82" src="sounds/MidConga.WAV"></audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
