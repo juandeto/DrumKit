@@ -12,6 +12,7 @@ body{
     background-image: url(fotoBata.jpg);
     height: 100vh;
     background-size: cover;
+    overflow: hidden;
 }
 
 body::after{
@@ -29,19 +30,19 @@ body::after{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     z-index: 1;
 }
 
 .key{
-    border: 4px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    padding: 0.7rem .3rem;
     transition: all 0.07s;
-    width: 100px;
+    width: auto;
     text-align: center;
     color: white;
     background: rgba(0,0,0,0.4);
@@ -66,4 +67,17 @@ body::after{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffc600;
+}
+
+@media (min-width: 500px){
+    .key{
+        border: 4px solid black;
+        border-radius: 5px;
+        margin: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem .5rem;
+        transition: all 0.07s;
+        width: 100px;
+
+    }
 }
